@@ -3,12 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      
+    </header>
+    <main>
+      <form class="form" id="formulario">
+        <h2 class="form_titulo"> Valida tu tarjeta para añadirla a tus formas de pago</h2>
+       <div class="form_name" id="form_nombre">
+         <label for="nombre" class="todoLabel">Nombre</label>
+         <input type="text" class="todoInput" name="nombre" value="Ana Aguilera">
+       </div> 
+       
+       <div class="form_number" id="form_numero">
+        <label for="numero" class="todoLabel">Numero de Tarjeta</label>
+        <input type="text" class="todoInput" id="creditCardNumbers" minlength="19"   maxlength="19">
+      </div> 
+      
+      <div class="grupoU">
+      <div class="form_date" id="form_fecha">
+        <label for="fecha" class="todoLabel">Fecha de Vencimiento</label>
+        <input type="text" class="todoInput" id= "dia" name="fecha" value="30/23">
+      </div> 
+
+      <div class="form_security" id="form_seguridad">
+        <label for="seguridad" class="todoLabel">CVV</label>
+        <input type="text" class="todoInput" id="segur"  name="seguridad" value="123">
+      </div>
+      </div>
+      <div class="boton_g">
+      <button class="boton"  id="aceptar" type="button">ACEPTAR</button>  
+      <input type="reset" value="BORRAR" class="boton_1">
+      </div>     
+      </form>
+      
+      
+    </main>
+    <footer>
+     
+    </footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
