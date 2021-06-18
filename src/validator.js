@@ -3,54 +3,54 @@ const validator = {
   isValid:function(creditCardNumbers){
     const aArreglo= Array.from(creditCardNumbers)
     const aNumeros= aArreglo.map(i=>Number(i));
-    //let tarjetaValida;
+    let tarjetaValida;
           
-   //console.log(aArreglo)
-   //console.log(aNumeros)
+   console.log(aArreglo)
+   console.log(aNumeros)
    //algoritmo de luhn
    const numeroInvertido= aNumeros.reverse()
-   //console.log(numeroInvertido)
+   console.log(numeroInvertido)
   
    const numerosPares=numeroInvertido.filter(function(elemento, index) {    //obteniendo numeros pares
        return(index%2)=== 1
    })
-   //console.log(numerosPares)
+   console.log(numerosPares)
 
    const numerosImPares=numeroInvertido.filter(function(elemento, index) {    //obteniendo numeros Impares
     return(index%2)=== 0
    })
-   //console.log(numerosImPares)
+   console.log(numerosImPares)
 
    const acumular= (acumulador,numero)=>acumulador+numero;
 
    const numerosImparesR=numerosImPares.reduce(acumular);
-   //console.log(numerosImparesR)
+   console.log(numerosImparesR)
 
    const porDos=numerosPares.map(function(x){
      return(x*2);
    })
-   //console.log(porDos)
+   console.log(porDos)
    const menoresDeDiez= porDos.filter(porDos=>porDos<10);
-   //console.log(menoresDeDiez)
+   console.log(menoresDeDiez)
    const menoresDeDiezR= menoresDeDiez.length> 0 ? menoresDeDiez.reduce(acumular) : 0;
-   //console.log(menoresDeDiezR)
+   console.log(menoresDeDiezR)
    const mayoresDeDiez= porDos.filter(porDos=>porDos>=10);
-   //console.log(mayoresDeDiez)
+   console.log(mayoresDeDiez)
 
    const restaMayoresDeDiez= mayoresDeDiez.map(function(x){
      return(x-9);
    })
-   //console.log(restaMayoresDeDiez);
+   console.log(restaMayoresDeDiez);
 
    
    let restaMayoresDeDiezR=restaMayoresDeDiez.length> 0 ? restaMayoresDeDiez.reduce(acumular) : 0;
-   //console.log(restaMayoresDeDiezR)
+   console.log(restaMayoresDeDiezR)
 
    const sumaTotal1= menoresDeDiezR+restaMayoresDeDiezR
-   //console.log(sumaTotal1)
+   console.log(sumaTotal1)
 
    const sumaTotal2= sumaTotal1+numerosImparesR
-   //console.log(sumaTotal2)
+   console.log(sumaTotal2)
 
    
    if ((sumaTotal2 % 10 ==0)) {
@@ -58,7 +58,7 @@ const validator = {
    } else {
     return false;
    }
-   //return tarjetaValida;
+   return tarjetaValida;
    
   },
   

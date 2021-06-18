@@ -1,28 +1,54 @@
-Proyecto: Tarjeta de Crédito Válida.
+# PROYECTO: CARD VALIDATION
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
 
-***
-Debe contener lo siguiente:
+## RESUMEN: 
+el proyecto tiene como objetivo principal verificar la validez de una tarjeta de credito o dbito aplicando el algoritmo de Lunh para la validación, adicionalmente incluye la validacion de inputs y el enmascaramiento del numero de tarjeta solo dejando visibles 4 digitos.
 
-* Un título con el nombre de tu proyecto.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
-* Investigación UX:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
-* Tu plan de acción - los Objetivos de Aprendizaje que vas a prioritizar.
+### Imagen final de tu proyecto.
+![imagen final 1](/src/img/pantalla1.png)
+
+![imagen final 2](/src/img/pantalla2.png) 
+
+![imagen final 3](/src/img/pantalla3invalida.png)
+
+![imagen final 4](/src/img/pantalla4invalida.png) 
+
+## INVESTIGACIÓN UX:
+
+  ### Usuarios y objetivos en relación con el producto.
+
+  Los usuarios serian los compradores de una tienda en línea estilo Amazón.
+
+  ### Cómo el producto soluciona los problemas/necesidades de dichos usuarios.
+
+  El producto facilita a los usuarios validar sus tarjetas de débito o crédito antes de hacerlas parte de su forma de pago usual.
+
+  ### Primer prototipo en papel.
+
+![Prototipo en papel 1](/src/img/prototipo_papel1.jpeg) 
+
+![Prototipo en papel 1](/src/img/prototipo_papel2.jpeg) 
+
+ ### Resumen del feedback recibido indicando las mejoras a realizar.
+
+
+### Prototipo final.
+
+![Prototipo en papel 2](/src/img/pantalla5proto.png) 
+
+### Plan de acción - Objetivos de Aprendizaje.
+1. HTML: profundizar en teoria
+* HTML semántico.
+
+2. Javascript: profundizar en teoria
+* Construir funciones
+* Propiedades de los objetos
+* Arreglos
+* Métodos
+* Manipulación dinamica del DOM.
+
+3. CSS: profundizar teoria
+* Uso de selectores
+* Uso de flexbox
+
 

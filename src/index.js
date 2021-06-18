@@ -25,7 +25,7 @@ creditCardNumbers.addEventListener('keyup', (e) =>{
      creditCardNumbers.value= valInput
      .replace(/\s/g,'')
      .replace(/\D/g,'')
-     .replace(/([0-9]{4})/g,'$1 ')
+     .replace(/([0-9])/g,'$1')
      .trim();
 
 } );
